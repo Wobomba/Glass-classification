@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h2>Welcome to glass classification</h2>
+    <h3>Enter the form data</h3>
+
+    <form action = '{% url 'result'%}'>
+
+      {% csrf_token %}
+
+      RI:<input type="text" required name="RI"><br><br>
+      Na:<input type="text" required name="Na"><br><br>
+      Mg:<input type="text" required name="Mg"><br><br>
+      Al:<input type="text" required name="Al"><br><br>
+      Si:<input type="text" required name="Si"><br><br>
+      K:<input type="text" required name="K"><br><br>
+      Ca:<input type="text" required name="Ca"><br><br>
+      Ba:<input type="text" required name="Ba"><br><br>
+      Fe:<input type="text" required name="Fe"><br><br>
+
+      <input type ='submit' name='' value ='submit'>
+    </form>
+  </body>
+</html>
